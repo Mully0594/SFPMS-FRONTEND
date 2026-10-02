@@ -74,7 +74,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        `${window.location.protocol}//${window.location.hostname}:5000/api/auth/register`,
+        `https://sfpms-backend.onrender.com/api/auth/register`,
         {
           method: "POST",
           headers: {

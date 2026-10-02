@@ -3,7 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
 
-const API_BASE_URL = `${window.location.protocol}//${window.location.hostname}:5000/api`;
+const API_BASE_URL = `https://sfpms-backend.onrender.com/api`;
 
 function Reports() {
   const [reportType, setReportType] = useState("Application Report");

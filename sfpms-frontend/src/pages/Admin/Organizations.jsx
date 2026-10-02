@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL = `${window.location.protocol}//${window.location.hostname}:5000/api/organizations/`;
+const API_URL = `https://sfpms-backend.onrender.com/api/organizations/`;
 
 const EGAZ_ORGANIZATION = {
   organization_code: "EGAZ",

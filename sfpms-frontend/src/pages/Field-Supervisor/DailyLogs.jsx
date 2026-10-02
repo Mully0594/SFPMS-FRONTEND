@@ -1319,7 +1319,7 @@ function DailyLogs() {
                 >
 
                   <a
-                    href={`${window.location.protocol}//${window.location.hostname}:5000${selectedLog.attachment_url}`}
+                    href={`https://sfpms-backend.onrender.com${selectedLog.attachment_url}`}
                     target="_blank"
                     rel="noreferrer"
                     className="fs-btn"

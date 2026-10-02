@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Sidebar from "../../components/Sidebar";
 
-const API_URL = `${window.location.protocol}//${window.location.hostname}:5000/api`;
+const API_URL = `https://sfpms-backend.onrender.com/api`;
 
 function Reports() {
   const [user, setUser] = useState(null);

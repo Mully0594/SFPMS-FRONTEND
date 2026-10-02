@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL = `${window.location.protocol}//${window.location.hostname}:5000/api/settings/`;
+const API_URL = `https://sfpms-backend.onrender.com/api/settings/`;
 
 const DEFAULT_SETTINGS = {
   systemName: "Student Field Placement Management System",

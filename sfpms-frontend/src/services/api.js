@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  `${window.location.protocol}//${window.location.hostname}:5000/api`;
+  `https://sfpms-backend.onrender.com/api`;
 
 const request = async (endpoint, options = {}) => {
   try {

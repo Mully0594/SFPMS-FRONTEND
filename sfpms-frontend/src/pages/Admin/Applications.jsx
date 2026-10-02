@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_BASE_URL = `${window.location.protocol}//${window.location.hostname}:5000`;
+const API_BASE_URL = `https://sfpms-backend.onrender.com`;
 const API_URL = `${API_BASE_URL}/api/applications`;
 
 const getDocumentUrl = (filePath) => {
@@ -18,7 +18,7 @@ const getDocumentUrl = (filePath) => {
     .replace(/^api\/uploads\//i, "")
     .replace(/^uploads\//i, "");
 
-  return `${window.location.protocol}//${window.location.hostname}:5000/api/uploads/${cleanPath}`;
+  return `https://sfpms-backend.onrender.com/api/uploads/${cleanPath}`;
 };
 
 const DocumentLink = ({ label, filePath }) => {
