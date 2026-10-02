@@ -1,0 +1,65 @@
+const API_BASE_URL = `${window.location.protocol}//${window.location.hostname}:5000/api`;
+
+const api = {
+  get: async (endpoint) => {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      credentials: "include",
+    });
+
+    if (!response.ok) {
+      throw new Error(`API GET failed: ${response.status}`);
+    }
+
+    return response.json();
+  },
+
+  post: async (endpoint, data) => {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: "POST",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error(`API POST failed: ${response.status}`);
+    }
+
+    return response.json();
+  },
+
+  put: async (endpoint, data) => {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: "PUT",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error(`API PUT failed: ${response.status}`);
+    }
+
+    return response.json();
+  },
+
+  delete: async (endpoint) => {
+    const response = await fetch(`${API_BASE_URL}${endpoint}`, {
+      method: "DELETE",
+      credentials: "include",
+    });
+
+    if (!response.ok) {
+      throw new Error(`API DELETE failed: ${response.status}`);
+    }
+
+    return response.json();
+  },
+};
+
+export { API_BASE_URL };
+export default api;
