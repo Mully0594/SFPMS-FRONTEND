@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-const USERS_API = `https://sfpms-backend.onrender.com/api/users`;
+const USERS_API = `https://sfpms-i4w5.onrender.com/api/users`;
 const ASSIGNMENT_API =
-  `https://sfpms-backend.onrender.com/api/supervisor-assignment`;
+  `https://sfpms-i4w5.onrender.com/api/supervisor-assignment`;
 
 function Supervisors() {
   const emptyForm = {
