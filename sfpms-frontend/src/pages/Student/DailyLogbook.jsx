@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import Sidebar from "../../components/Sidebar";
 import { useSidebar } from "../../components/useSidebar";
 
-const API_URL = `https://sfpms-i4w5.onrender.com/api`;
+const API_URL = `https://sfpms-backend.onrender.com/api`;
 
 const TABS = [
   "ATTENDANCE",

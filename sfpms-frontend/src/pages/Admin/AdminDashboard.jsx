@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-const API_URL = `https://sfpms-i4w5.onrender.com/api`;
+const API_URL = `https://sfpms-backend.onrender.com/api`;
 const defaultDashboard = {
   total_users: 0,
   total_students: 0,

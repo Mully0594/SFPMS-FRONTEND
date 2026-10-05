@@ -74,7 +74,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        `https://sfpms-i4w5.onrender.com/api/auth/register`,
+        `https://sfpms-backend.onrender.com/api/auth/register`,
         {
           method: "POST",
           headers: {
